@@ -1,0 +1,105 @@
+<div class="lp-pg " style="background-color:#CAEDF7;">
+    <div class="lp-pg-generated-password" data-module="passwordGenerator">
+        <form id="GENERATED-PASSWORD-FORM">
+            <input value="" id="GENERATED-PASSWORD" spellcheck="false" class="lp-pg-generated-password__input" type="text" />
+        </form>
+        <div class="lp-pg-generated-password__icon-wrapper">
+            <button data-clipboard-target="#GENERATED-PASSWORD" class="lp-pg-generated-password__icon lp-pg-generated-password__icon-copy">
+                <span class="lp-pg-tooltip-content">
+                    Copiar
+                </span>
+            </button>
+            <button class="lp-pg-generated-password__icon lp-pg-generated-password__icon-generate">
+                <span class="lp-pg-tooltip-content">
+                    Generar
+                </span>
+            </button>
+        </div>
+            <div class="lp-pg-generated-password__strength-wrapper">
+                <div class="lp-pg-generated-password__strength"></div>
+            </div>
+
+    </div>
+    <form id="PG-FORM" class="lp-pg-settings">
+        <h3 class="lp-pg-settings__title">Personalice su contraseña</h3>
+        <div class="lp-custom-range__wrapper">
+                <label class="lp-custom-range__label" for="lp-pg-password-length">
+                    Longitud de la contraseña
+                </label>
+            <div class="lp-custom-range__inner">
+                <input value="12" name="length" class="lp-custom-range__number" step="1" id="lp-pg-password-length" type="number" min="0" max="100" />
+                <div class="lp-custom-range" id="lp-pg-password-range">
+                    <div class="lp-custom-range__bar">
+                        <div class="lp-custom-range__value"></div>
+                        <button class="lp-custom-range__slider"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lp-row">
+            <div class="lp-pg-settings__radio-wrap">
+                <div class="lp-radio">
+                    <input class="lp-radio__input"  id="lp-pg-easy-to-say" name="encryption-style" type="radio" value="easy-to-say" />
+                    <label class="lp-radio__label" for="lp-pg-easy-to-say">
+                        Fácil de decir
+                    </label>
+                        <div class="lp-icon__info">
+                            <span class="lp-pg-tooltip-content">
+                                Evite números y caracteres especiales
+                            </span>
+                        </div>
+                </div>
+                <div class="lp-radio">
+                    <input class="lp-radio__input" id="lp-pg-easy-to-read" name="encryption-style" type="radio" value="easy-to-read" />
+                    <label class="lp-radio__label" for="lp-pg-easy-to-read">
+                        Fácil de leer
+                    </label>
+                        <div class="lp-icon__info">
+                            <span class="lp-pg-tooltip-content">
+                                Evite caracteres ambiguos como l, 1, O y 0
+                            </span>
+                        </div>
+
+                </div>
+                <div class="lp-radio">
+                    <input class="lp-radio__input" checked=&quot;checked&quot; id="lp-pg-all-characters" name="encryption-style" type="radio" value="all-characters" />
+                    <label class="lp-radio__label" for="lp-pg-all-characters">
+                        Todos los caracteres
+                    </label>
+                        <div class="lp-icon__info">
+                            <span class="lp-pg-tooltip-content">
+                                Cualquier combinación de caracteres como !, 7, h, K y l1
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="lp-pg-settings__checkbox-wrap">
+                <div class="lp-checkbox">
+                    <input class="lp-checkbox__input" checked=&quot;checked&quot; id="lp-pg-uppercase" type="checkbox" name="uppercase" />
+                    <label class="lp-checkbox__label" for="lp-pg-uppercase">
+                        Mayúsculas
+                    </label>
+                </div>
+                <div class="lp-checkbox">
+                    <input class="lp-checkbox__input" checked=&quot;checked&quot; id="lp-pg-lowercase" type="checkbox" name="lowercase" />
+                    <label class="lp-checkbox__label" for="lp-pg-lowercase">
+                        Minúsculas
+                    </label>
+                </div>
+                <div class="lp-checkbox">
+                    <input class="lp-checkbox__input"  checked=&quot;checked&quot; id="lp-pg-numbers" type="checkbox" name="numbers" />
+                    <label class="lp-checkbox__label" for="lp-pg-numbers">
+                        Números
+                    </label>
+                </div>
+                <div class="lp-checkbox">
+                    <input class="lp-checkbox__input"  checked=&quot;checked&quot; id="lp-pg-symbols" type="checkbox" name="symbols" />
+                    <label class="lp-checkbox__label" for="lp-pg-symbols">
+                        Símbolos
+                    </label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
